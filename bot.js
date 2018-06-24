@@ -73,20 +73,16 @@ function alertz() {
 function alertz2() {
     if (day == 2 || day == 3 || day == 6) {
         if (h == 23 && m == 00){
-            
-            sendembed()
+        sendembed()
     }}
    if (day == 0 || day == 1 || day == 4 || day == 5){
         if (h == 9 && m == 00){
-            
-            sendembed()
+        sendembed()
     }}
    if (h == 13 && m == 00){
-        
         sendembed()
     }
-   if (h == 17 && m == 5){
-        
+   if (h == 17 && m == 00){
         sendembed()
     }
   
@@ -264,7 +260,7 @@ switch (day) {
 
           }
 }
-
+//ส่งข้อความไปที่ chanel
 function sendembed(){
  const embed = new Discord.RichEmbed()
     .setTitle("บอสตัวต่อไป")  //หัวข้อ
