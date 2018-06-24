@@ -85,7 +85,7 @@ function alertz2() {
         
         sendembed()
     }
-   if (h == 17 && m == 00){
+   if (h == 17 && m == 5){
         
         sendembed()
     }
