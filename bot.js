@@ -125,11 +125,7 @@ databoss()
 function databoss(){
 switch (day) {
 /*อาทิตย์*/   case 0 :
-              if (h >= 18 && h < 24) {
-                  boss ='ไม่มี'
-                  t = '00:00'
-                  imgboss = pic.noboss
-              }else if (h >= 0 && h < 10){
+              if (h >= 0 && h < 10){
                   boss = 'คจาคาร์'
                   t = '10:00'
                   imgboss = pic.kzarka
@@ -141,14 +137,14 @@ switch (day) {
                   boss = 'คจาคาร์'
                   t = '18:00'
                   imgboss = pic.kzarka
+              }else if (h >= 18 && h < 24) {
+                  boss ='ไม่มี'           //ตัวของเช้าวัน  จันทร์
+                  t = '00:00'
+                  imgboss = pic.noboss
               }
               break   
 /*จันทร์*/    case 1:
-              if (h >= 18 && h < 24) {
-                  boss ='ไม่มี'
-                  t = '00:00'
-                  imgboss = pic.noboss
-              }else if (h >= 0 && h < 10){
+              if (h >= 0 && h < 10){
                   boss = 'คูทุม'
                   t = '10:00'
                   imgboss = pic.kutum
@@ -160,14 +156,14 @@ switch (day) {
                   boss = 'คูทุม'
                   t = '18:00'
                   imgboss = pic.kutum
+              }else if (h >= 18 && h < 24) {
+                  boss ='ไม่มี'           //ตัวของเช้าวัน  อังคาร
+                  t = '00:00'
+                  imgboss = pic.noboss
               }
               break
 /*อังคาร*/   case 2:
-              if (h >= 18 && h < 24) {
-                  boss ='คจาคาร์'
-                  t = '00:00'
-                  imgboss = pic.kzarka
-              }else if (h >= 0 && h < 10){
+              if (h >= 0 && h < 10){
                   boss = 'ไม่มี'
                   t = '10:00'
                   imgboss = pic.noboss
@@ -178,15 +174,15 @@ switch (day) {
               }else if (h >= 14 && h < 18){
                   boss = 'คจาคาร์'
                   t = '18:00'
+                  imgboss = pic.kzarka
+              }else if (h >= 18 && h < 24) {
+                  boss ='คจาคาร์'           //ตัวของเช้าวัน  พุธ
+                  t = '00:00'
                   imgboss = pic.kzarka
               }
               break
 /*พุธ*/      case 3 :
-              if (h >= 18 && h < 24) {
-                  boss ='คูทุม'
-                  t = '00:00'
-                  imgboss = pic.kutum
-              }else if (h >= 0 && h < 10){
+              if (h >= 0 && h < 10){
                   boss = 'ไม่มี'
                   t = '10:00'
                   imgboss = pic.noboss
@@ -197,15 +193,15 @@ switch (day) {
               }else if (h >= 14 && h < 18){
                   boss = 'คูทุม'
                   t = '18:00'
+                  imgboss = pic.kutum
+              }else if (h >= 18 && h < 24) {
+                  boss ='คูทุม'           //ตัวของเช้าวัน  พฤ
+                  t = '00:00'
                   imgboss = pic.kutum
               }
               break
 /*พฤ*/      case 4 :
-              if (h >= 18 && h < 24) {
-                  boss ='ไม่มี'
-                  t = '00:00'
-                  imgboss = pic.noboss
-              }else if (h >= 0 && h < 10){
+              if (h >= 0 && h < 10){
                   boss = 'คจาคาร์'
                   t = '10:00'
                   imgboss = pic.kzarka
@@ -217,14 +213,14 @@ switch (day) {
                   boss = 'คจาคาร์'
                   t = '18:00'
                   imgboss = pic.kzarka
+              }else if (h >= 18 && h < 24) {
+                  boss ='ไม่มี'           //ตัวของเช้าวัน ศุกร์
+                  t = '00:00'
+                  imgboss = pic.noboss
               }
               break
 /*ศุกร์*/     case 5 :
-              if (h >= 18 && h < 24) {
-                  boss ='ไม่มี'
-                  t = '00:00'
-                  imgboss = pic.noboss
-              }else if (h >= 0 && h < 10){
+              if (h >= 0 && h < 10){
                   boss = 'คูทุม'
                   t = '10:00'
                   imgboss = pic.kutum
@@ -236,14 +232,14 @@ switch (day) {
                   boss = 'คูทุม'
                   t = '18:00'
                   imgboss = pic.kutum
+              }else if (h >= 18 && h < 24) {
+                  boss ='ไม่มี'           //ตัวของเช้าวัน  เสาร์
+                  t = '00:00'
+                  imgboss = pic.noboss
               }
               break
 /*เสาร์*/     case 6 :
-              if (h >= 18 && h < 24) {
-                  boss ='คจาคาร์'
-                  t = '00:00'
-                  imgboss = pic.kzarka
-              }else if (h >= 0 && h < 10){
+              if (h >= 0 && h < 10){
                   boss = 'ไม่มี'
                   t = '10:00'
                   imgboss = pic.noboss
@@ -254,6 +250,10 @@ switch (day) {
               }else if (h >= 14 && h < 18){
                   boss = 'คจาคาร์'
                   t = '18:00'
+                  imgboss = pic.kzarka
+              }else if (h >= 18 && h < 24) {
+                  boss ='คจาคาร์'           //ตัวของเช้าวัน  อาทิต
+                  t = '00:00'
                   imgboss = pic.kzarka
               }
               break
