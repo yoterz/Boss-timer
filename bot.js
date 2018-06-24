@@ -32,50 +32,6 @@ bot.on("message", (msg) => {
      msg.channel.send({embed});
      bot.user.setGame('Next '+t+' '+boss)
     }
-
-
-    if (msg.content === "เบีย"){
-      const embed = new Discord.RichEmbed()
-      .setColor(0xd296d4)
-      .setImage(pic.beer)     
-      msg.channel.send({embed});
-      msg.channel.send('fujosy',{
-        tts: true
-       })
-      bot.user.setGame('Next '+t+' '+boss)
-  
-    }
-    if (msg.content === "เบียร์"){
-      const embed = new Discord.RichEmbed()
-      .setColor(0xd296d4)
-      .setImage(pic.beer)     
-      msg.channel.send({embed});
-      msg.channel.send('fujosy',{
-        tts: true
-        })
-      bot.user.setGame('Next '+t+' '+boss)
-    }
-    if (msg.content === "พี่โย"){
-      const embed = new Discord.RichEmbed()
-      .setColor(0x033e01)
-      .setImage(pic.yo)     
-      msg.channel.send({embed});
-      msg.channel.send('yoyo',{
-        tts: true
-       })
-      bot.user.setGame('Next '+t+' '+boss)
-    }
-    if (msg.content === "เนส"){
-      const embed = new Discord.RichEmbed()
-      .setColor(0x030663)
-      .setImage(pic.nest)     
-      msg.channel.send({embed});
-      msg.channel.send('nestty',{
-        tts: true
-        })
-      bot.user.setGame('Next '+t+' '+boss)
-    }
-
 })
 
 
