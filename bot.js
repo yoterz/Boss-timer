@@ -3,7 +3,7 @@ const pic = require('./pic.json');
 
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-bot.login(botconfig.token)
+bot.login(process.env.BOT_TOKEN)
 bot.on("ready",() => {
     console.log('Ready...')
     bot.user.setUsername('Boss timer')
