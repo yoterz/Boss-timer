@@ -48,7 +48,6 @@ function status(){
 
 /*เช็คเวลาเพื่อแจ้งเตือนก่อน 15 นาที*/
 function alertz() {
-  timestart() 
   if (day == 2 || day == 3 || day == 6) {
       if (h == 23 && m == 45){
           var channel = bot.channels.find("name", botconfig.channelName)
@@ -72,7 +71,6 @@ function alertz() {
 
 //ส่งข้อความบอส เพื่อพิม ข้อความแจ้งบอสก่อน 1 ชม
 function alertz2() {
-    timestart() 
    if (day == 2 || day == 3 || day == 6) {
         if (h == 23 && m == 00){
         sendembed()
