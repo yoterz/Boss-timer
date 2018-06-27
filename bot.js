@@ -73,11 +73,11 @@ function alertz() {
 //ส่งข้อความบอส เพื่อพิม ข้อความแจ้งบอสก่อน 1 ชม
 function alertz2() {
     timestart() 
-    if (day == 0 || day == 1 || day == 4 || day == 5)( {
+   if (day == 0 || day == 1 || day == 4 || day == 5) {
         if (h == 23 && m == 00){
         sendembed()
     }}
-   if day == 2 || day == 3 || day == 6){
+   if (day == 2 || day == 3 || day == 6){
         if (h == 9 && m == 00){
         sendembed()
     }}
