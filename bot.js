@@ -12,8 +12,8 @@ bot.on("ready",() => {
     bot.user.setGame('NEXT '+t+' '+boss)
 })
 
-setInterval(()=>status(), 25000);
-setInterval(()=>alertz2(), 60000);
+setInterval(()=>status(), 60000);
+//setInterval(()=>alertz2(), 60000);
 
 bot.on("message", (msg) => {
     if (msg.content === "บอส"){
@@ -40,7 +40,7 @@ bot.on("message", (msg) => {
 /*ใส่สเตัสที่bot เช็คเวลาแจ้งเตือน ดีเลจาก setInterval(()=>status(), 30000);*/
 function status(){     
   timestart() 
-  alertz()
+  //alertz()
   bot.user.setGame('NEXT '+t+' '+boss)
  
 }
