@@ -255,7 +255,7 @@ function sendembed(){
     
     .setColor(0x2f0200)   //ใส่สี
     .setDescription("วัน  "+days[day]+"   เวลา   "+"__"+t+"__"+"              "+"__**"+boss+"**__")   //รายละเอียด
-    .setFooter("Boss Timer BDO V2.0 by ฟูโอ้", "https://cdn.pixabay.com/photo/2017/08/27/22/02/pig-2687704_960_720.png") //รูป ข้อความล่างสุด
+    .setFooter("Boss Timer BDO V2.1 by ฟูโอ้", "https://cdn.pixabay.com/photo/2017/08/27/22/02/pig-2687704_960_720.png") //รูป ข้อความล่างสุด
     .setImage("https://www.picz.in.th/images/2018/06/22/489tfS.png")     //รูปใหญ่
     .setThumbnail(imgboss)   //รูปเล็กขวาบน
 
