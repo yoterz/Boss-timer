@@ -12,7 +12,7 @@ bot.on("ready",() => {
     bot.user.setGame('NEXT '+t+' '+boss)
 })
 
-setInterval(()=>status(), 60000);
+setInterval(()=>status(), 30000);
 //setInterval(()=>alertz2(), 60000);
 
 bot.on("message", (msg) => {
